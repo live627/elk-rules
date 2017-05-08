@@ -1,0 +1,34 @@
+{
+  "name": "Rules",
+  "description": "Lay down the law",
+  "extra": {
+    "setting_url": "action=admin;area=rules"
+  },
+  "authors": [
+    {
+      "name": "John Rayes",
+      "email": "live627@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/live627/elkarte-addon-helper.git",
+      "type": "vcs"
+    },
+    {
+      "url": "https://github.com/elkarte/Elkarte.git",
+      "type": "vcs"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "live627/elkarte-addon-helper": "dev-develop"
+  },
+  "autoload": {
+    "psr-4": {
+      "live627\\Rules\\": ""
+    }
+  },
+  "minimum-stability": "dev"
+}

@@ -1,0 +1,6 @@
+[center][size=4][color=red]ATTENTION[/color][/size][/center]
+[hr]
+This action will deactivate all features of LiveGallery.
+Check the checkbox below marked Remove all data associated with this modification to complexly and irrevocably destroy all database entries created by this modification. This includes all albums, items, and comments!
+
+Thank You for trying this modification :)

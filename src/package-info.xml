@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.elkarte.net/site/package-info">
+<package-info xmlns="http://www.elkarte.net/site/package-info" xmlns:elk="http://www.elkarte.net/">
+    <id>live627:rules</id>
+    <name>Rules</name>
+    <version>1.0</version>
+    <type>modification</type>
+
+    <install for="1.0 - 1.0.99">
+        <readme parsebbc="true">install.txt</readme>
+        <hook hook="integrate_pre_load" file="SUBSDIR/Rules/Rules.integrate.php" function="Rules_Integrate::registerAll" />
+        <require-dir name="Rules" destination="SUBSDIR" />
+		<require-file name="Rules.template.php" destination="THEMEDIR" />
+		<require-file name="Rules.english.php" destination="LANGUAGEDIR/englis" />
+	</install>
+
+    <uninstall for="1.0 - 1.0.99">
+        <readme parsebbc="true">uninstall.txt</readme>
+        <hook reverse="true" hook="integrate_pre_load" file="SUBSDIR/Rules/Rules.integrate.php" function="Rules_Integrate::registerAll" />
+        <remove-dir name="SUBSDIR/Rules" />
+		<remove-file name="THEMEDIR/Rules.template.php" />
+		<remove-file name="LANGUAGEDIR/english/Rules.english.php" />
+	</uninstall>
+
+</package-info>
